@@ -68,11 +68,13 @@ const CakeContact = () => {
         setSearchFilter(event.target.value);
     }
 
-    const filteredData = data.filter(item =>
-        item.UserName.toLowerCase().includes(searchFilter.toLowerCase()) ||
-        item.Email.toLowerCase().includes(searchFilter.toLowerCase())
-    );
-
+    const filteredData = data.filter(item => {
+        const userName = item.UserName || '';
+        const email = item.Email || '';
+        return userName.toLowerCase().includes(searchFilter.toLowerCase()) ||
+               email.toLowerCase().includes(searchFilter.toLowerCase());
+    });
+    
     return (
         <Fragment>
              
