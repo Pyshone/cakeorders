@@ -8,7 +8,7 @@ import cake from'../../../Assets/images/cake.1.jpg';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
-// import './Contact.css'; // Assuming you have a CSS file for additional styles
+// import './Contact.css'; 
 
 const schema = yup.object().shape({
     UserName: yup.string().required("Name is required"),
