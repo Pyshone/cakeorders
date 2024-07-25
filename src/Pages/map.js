@@ -1,0 +1,32 @@
+export const datas = [
+    {
+        id:1,
+        name:"mathew",
+        age:'29',
+        DOB:"21/12"
+    },
+    {
+        id:2,
+        name:"mathew",
+        age:'34',
+        DOB:"21/12"
+    },
+    {
+        id:3,
+        name:"mathew",
+        age:'39',
+        DOB:"21/12"
+    },
+    {
+        id:4,
+        name:"mathew",
+        age:'20',
+        DOB:"21/12"
+    },
+    {
+        id:5,
+        name:"mathew",
+        age:'34',
+        DOB:"21/12"
+    },
+]

@@ -1,0 +1,351 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.back{
+  height: 300px;
+  width: 500px;
+  padding: 50px;
+  /* background-color: brown; */
+  align-items: center;
+}
+.btn{
+  background-color:chartreuse;
+  color: white;
+  width: 100px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 50px;
+  font-size: 15px;
+
+}
+.back, p h1{
+  font-size: 30px;
+}
+
+.form-intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.newenters {
+  display: flex;
+  justify-content: center; /* Center the form horizontally */
+  padding: 30px;
+  background-color: #f7f7f7; /* Light background for better contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.token-container {
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: start;
+  max-width: 600px;
+  width: 100%;
+}
+
+.token-Container {
+  padding: 2rem;
+  background-color: #f0c8c8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: start;
+  max-width: 600px;
+  width: 100%;
+}
+h2 {
+  font-size: 2rem;
+  color: #3f51b5;
+  margin-bottom: 1rem;
+}
+
+.token-text {
+  word-break: break-all;
+  font-size: 1.2rem;
+  color: #333333;
+  margin-top: 1rem;
+}
+
+.no-token-text {
+  color: #f44336;
+  margin-top: 1rem;
+  text-align: center;
+
+}
+
+
+.error {
+  color: #f44336;
+}
+h3{
+  color: #198754;
+}
+
+
+.token-container {
+  position: relative;
+}
+
+.token-img {
+  max-width: 200px; 
+  height: auto;
+  position: absolute;
+  top: 30px; 
+  right: 150px; 
+}
+/* .......................................................................................................................... */
+
+
+.form-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+  margin-bottom: 16px;
+  margin-top: 30px;
+}
+
+.column {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.column:last-child {
+  margin-right: 0;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-left: 16px; /* Add margin-left for spacing */
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.actions > button {
+  margin-left: 8px;
+}
+
+
+
+
+/* ///////////////////////////////////////contact */
+body {
+  background-color: #f8f9fa;
+  /* font-family: '', sans-serif; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  background: url('E:/Product/myapp/src/Assets/images/cake.1.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+h2 {
+  color: #4a4a4a;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+.label{
+  margin-top: 100px;
+
+}
+.input-field {
+
+margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.error {
+  font-weight: 600;
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 0.900rem;
+}
+
+.submit-btn {
+  /* width: 100%; */
+  background-color: #28a745;
+  color: white;
+  padding: 10px 0;
+}
+
+.submit-btn:disabled {
+  background-color: #6c757d;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 600px) {
+  .form {
+      padding: 20px;
+  }
+}
+
+.cakecontain{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.cakeimg{
+width: 150px;
+height: 150px;
+border-radius: 75px;
+}
+
+
+.bttn{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+
+
+/* ........................ */
+.card-container {
+  
+  background: url('E:/Product/myapp/src/Assets/images/cake.6.jpg')no-repeat center center fixed;
+  background-size: cover;
+  padding: 20px;
+}
+
+.card {
+  /* margin-top: 20px; */
+  background-image: url("E:/Product/myapp/src/Assets/images/cake.9.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+}
+.card:hover {
+  background-color: #c6c6c6;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-content > div:last-child {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog-content input {
+  margin-bottom: 10px;
+}
+
+/* .search {
+  background-color: rgb(197, 196, 200);
+  color: #fff;
+  padding: 10px 120px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 2px -2px gray;
+  display: flex;
+align-items: center;
+} */
