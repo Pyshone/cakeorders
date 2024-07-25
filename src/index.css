@@ -202,7 +202,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../src/Assets/images/cake.1.jpg");
+  /* height: 100vh; */
+  background: url('../src/Assets/images/cake.1.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -298,16 +299,14 @@ border-radius: 75px;
 /* ........................ */
 .card-container {
   
-  /* background: url('E:/Product/myapp/src/Assets/images/cake.6.jpg'); */
-  background-image: url('../src/Assets/images/cake.6.jpg');
+  background: url('../src/Assets/images/cake.6.jpg');
   background-size: cover;
   padding: 20px;
 }
 
 .card {
   /* margin-top: 20px; */
-  /* background-image: url("E:/Product/myapp/src/Assets/images/cake.9.jpg"); */
-  background-image: url('../src/Assets/images/cake.9.jpg');
+  background-image: url("../src/Assets/images/cake.9.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -350,3 +349,44 @@ border-radius: 75px;
   display: flex;
 align-items: center;
 } */
+
+.cakecontain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.cakecontain h2 {
+  font-size: 1.5rem;
+}
+
+.cakecontain p {
+  font-size: 1rem;
+}
+
+.cakecontain .cakeimg {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .cakecontain {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .cakecontain h2 {
+    font-size: 2rem;
+  }
+
+  .cakecontain p {
+    font-size: 1.2rem;
+  }
+
+  .cakecontain .cakeimg {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
