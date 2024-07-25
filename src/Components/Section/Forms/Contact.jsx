@@ -4,7 +4,7 @@ import * as yup from "yup";
 import { Button, Container, Divider, TextField, CircularProgress, Grid, Avatar } from "@mui/material";
 import { useForm } from "react-hook-form";
 import axios from 'axios';
-import cake from 'E:/Product/myapp/src/Assets/images/cake.1.jpg';
+import cake from'../../../Assets/images/cake.1.jpg';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';

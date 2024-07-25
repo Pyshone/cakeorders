@@ -194,14 +194,16 @@ body {
   /* ........................ */
   .card-container {
     
-    background: url('E:/Product/myapp/src/Assets/images/cake.6.jpg')no-repeat center center fixed;
+    /* background: url('E:/Product/myapp/src/Assets/images/cake.6.jpg') */
+    background-image: url('../images/cake.6.jpg');
     background-size: cover;
     padding: 20px;
   }
   
   .card {
     /* margin-top: 20px; */
-    background-image: url("E:/Product/myapp/src/Assets/images/cake.2.jpg");
+    /* background-image: url("E:/Product/myapp/src/Assets/images/cake.2.jpg"); */
+    background-image: url('../images/cake.2.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
