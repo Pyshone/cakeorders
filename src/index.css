@@ -141,13 +141,7 @@ h3{
 /* .......................................................................................................................... */
 
 
-.form-container {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
-}
+
 
 .row {
   display: flex;
@@ -206,7 +200,12 @@ body {
   background: url('../src/Assets/images/cake.1.jpg') no-repeat center center fixed;
   background-size: cover;
 }
-
+.form-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 .form {
   background: rgba(255, 255, 255, 0.9);
   padding: 30px;
@@ -305,7 +304,7 @@ border-radius: 75px;
 }
 
 .card {
-  /* margin-top: 20px; */
+  
   background-image: url("../src/Assets/images/cake.9.jpg");
   background-size: cover;
   background-position: center;
@@ -338,17 +337,7 @@ border-radius: 75px;
   margin-bottom: 10px;
 }
 
-/* .search {
-  background-color: rgb(197, 196, 200);
-  color: #fff;
-  padding: 10px 120px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 4px 2px -2px gray;
-  display: flex;
-align-items: center;
-} */
+
 
 .cakecontain {
   display: flex;
