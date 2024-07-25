@@ -4,11 +4,12 @@ import * as yup from "yup";
 import { Button, Container, Divider, TextField, CircularProgress, Grid, Avatar } from "@mui/material";
 import { useForm } from "react-hook-form";
 import axios from 'axios';
-import cake from'../../../Assets/images/cake.1.jpg';
+// import cake from 'E:/Product/myapp/src/Assets/images/cake.1.jpg';
+import cake from'../../../Assets/images/cake.1.jpg'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
-// import './Contact.css'; 
+// import '../../../Assets/css/Contact.css'; 
 
 const schema = yup.object().shape({
     UserName: yup.string().required("Name is required"),
@@ -20,12 +21,18 @@ const schema = yup.object().shape({
     Flavour: yup.string().required("Flavour is required"),
     Location: yup.string().required("This field is required"),
     ADD: yup.string().required("This field is required"),
+    CakeSize: yup.string().required("Cake Size is required"),
+    // ServingSize: yup.string().required("Serving Size is required"),
+    Filling: yup.string().required("Filling is required"),
+    Theme: yup.string().required("Theme of Cake is required"),
+    Budget: yup.number().required("Approximate Budget is required").positive("Budget must be a positive number"),
 }).required();
 
 const Contact = () => {
     const navigate = useNavigate ()
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
+    const [file, setFile] = useState(null);
     const {
         register,
         handleSubmit,
@@ -48,6 +55,10 @@ const Contact = () => {
             setLoading(false);
             toast.error('An error occurred during registration. Please try again.');
         }
+    };
+
+    const handleFileChange = (e) => {
+        setFile(e.target.files[0]);
     };
 
     return (
@@ -121,6 +132,46 @@ const Contact = () => {
                                     className="input-field"
                                 />
                                 <p className="error">{errors.Flavour?.message}</p>
+                            </Grid>
+                            <Grid item xs={12} sm={6}>
+                                <label>Theme of Cake</label>
+                                <TextField
+                                     placeholder="e.g. Funny, Hip, Futuristic, etc."
+                                    {...register("Theme")}
+                                    fullWidth
+                                    className="input-field"
+                                />
+                                <p className="error">{errors.Theme?.message}</p>
+                            </Grid>
+                            <Grid item xs={12} sm={6}>
+                                <label>Filling</label>
+                                <TextField
+                                    placeholder="Please Select"
+                                    {...register("Filling")}
+                                    fullWidth
+                                    className="input-field"
+                                />
+                                <p className="error">{errors.Filling?.message}</p>
+                            </Grid>
+                            <Grid item xs={12} sm={6}>
+                                <label>CakeSize</label>
+                                <TextField
+                                    placeholder="Sm,Md,Lg"
+                                    {...register("CakeSize")}
+                                    fullWidth
+                                    className="input-field"
+                                />
+                                <p className="error">{errors.CakeSize?.message}</p>
+                            </Grid> 
+                            <Grid item xs={12} sm={6}>
+                                <label>Budget</label>
+                                <TextField
+                                    placeholder="0.00"
+                                    {...register("Budget")}
+                                    fullWidth
+                                    className="input-field"
+                                />
+                                <p className="error">{errors.Budget?.message}</p>
                             </Grid>
                             <Grid item xs={12} sm={6}>
                                 <label>Delivery Location</label>

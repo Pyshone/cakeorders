@@ -101,22 +101,34 @@ const CakeContact = () => {
                                     {item.UserName}
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    <strong>Address:</strong> {item.ADD}
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    <strong>Location:</strong> {item.Location}
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    <strong>Flavour:</strong> {item.Flavour}
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    <strong>Date Required:</strong> {new Date(item.DateRequired).toLocaleDateString()}
+                                    <strong>Email:</strong> {item.Email}
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     <strong>Contact Number:</strong> {item.ContactNumber}
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    <strong>Email:</strong> {item.Email}
+                                    <strong>Date Required:</strong> {new Date(item.DateRequired).toLocaleDateString()}
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    <strong>Flavour:</strong> {item.Flavour}
+                                </Typography> 
+                                <Typography variant="body2" color="text.secondary">
+                                    <strong>Theme of Cake :</strong> {item.Flavour}
+                                </Typography> 
+                                <Typography variant="body2" color="text.secondary">
+                                    <strong>Filling:</strong> {item.Filling}
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    <strong>CakeSize:</strong> {item.CakeSize}
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    <strong>Budget:</strong> {item.Budget}
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    <strong>Location:</strong> {item.Location}
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    <strong>Additional Details:</strong> {item.ADD}
                                 </Typography>
                                 <div className='bttn'>
                                     <Button color="error" onClick={() => handleClickOpen(item)} sx={{textTransform:"none"}} variant='outlined'>
